@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="listener"
+            type="org.lycancypher.navlayouts01.ui.sendCodeModule.view.adapters.OnClickListener" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.sendCodeModule.view.SendCodeFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/margin_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@integer/margin_start" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/margin_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@integer/margin_end" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/margin_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="@integer/margin_bottom" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logo_muestra_oscuro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvPhoneInput"/>
+
+        <TextView
+            android:id="@+id/tvPhoneInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_margin"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="@string/txt_input_code"
+            app:layout_constraintBottom_toTopOf="@id/lytInputCode"
+            app:layout_constraintEnd_toEndOf="@id/margin_end"
+            app:layout_constraintStart_toStartOf="@id/margin_start" />
+
+        <LinearLayout
+            android:id="@+id/lytInputCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/margin_end"
+            app:layout_constraintStart_toStartOf="@id/margin_start"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/etOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginEnd="@dimen/big_margin"
+                android:digits="123456789"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/big_margin"
+                android:digits="123456789"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/big_margin"
+                android:digits="123456789"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:digits="123456789"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_enviar"
+            style="@style/ButtonTheme"
+            android:onClick="@{() -> listener.onClick()}"
+            app:layout_constraintBottom_toBottomOf="@id/margin_bottom"
+            app:layout_constraintEnd_toEndOf="@id/margin_end"
+            app:layout_constraintStart_toStartOf="@id/margin_start" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

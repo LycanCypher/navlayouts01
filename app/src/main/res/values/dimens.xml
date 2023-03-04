@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_padding">16dp</dimen>
+    <dimen name="btn_corner_radius">24dp</dimen>
+    <dimen name="big_margin">24dp</dimen>
+    <dimen name="common_margin">16dp</dimen>
+    <dimen name="middle_margin">8dp</dimen>
+    <dimen name="min_marghin">4dp</dimen>
+</resources>

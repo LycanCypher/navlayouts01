@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="listener"
+            type="org.lycancypher.navlayouts01.ui.sendPhoneModule.view.adapters.OnClickListener" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.sendPhoneModule.view.SendPhoneFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/margin_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@integer/margin_start" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/margin_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@integer/margin_end" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/margin_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="@integer/margin_bottom" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logo_muestra_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvPhoneInput"/>
+
+        <TextView
+            android:id="@+id/tvPhoneInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_margin"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="@string/txt_validate_phone"
+            app:layout_constraintBottom_toTopOf="@id/tilPhoneInput"
+            app:layout_constraintEnd_toEndOf="@id/margin_end"
+            app:layout_constraintStart_toStartOf="@id/margin_start" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPhoneInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_validate_phone"
+            app:placeholderTextAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/margin_end"
+            app:layout_constraintStart_toStartOf="@id/margin_start"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPhoneInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:inputType="number"
+                android:digits="123456789"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSendPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_enviar"
+            style="@style/ButtonTheme"
+            android:onClick="@{() -> listener.onClick()}"
+            app:layout_constraintBottom_toBottomOf="@id/margin_bottom"
+            app:layout_constraintEnd_toEndOf="@id/margin_end"
+            app:layout_constraintStart_toStartOf="@id/margin_start" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

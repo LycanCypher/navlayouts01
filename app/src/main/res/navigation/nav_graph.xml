@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sendPhoneFragment">
+
+    <fragment
+        android:id="@+id/sendPhoneFragment"
+        android:name="org.lycancypher.navlayouts01.ui.sendPhoneModule.view.SendPhoneFragment"
+        android:label="fragment_send_phone"
+        tools:layout="@layout/fragment_send_phone" >
+        <action
+            android:id="@+id/action_sendPhoneFragment_to_sendCodeFragment"
+            app:destination="@id/sendCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendCodeFragment"
+        android:name="org.lycancypher.navlayouts01.ui.sendCodeModule.view.SendCodeFragment"
+        android:label="fragment_send_code"
+        tools:layout="@layout/fragment_send_code" >
+        <action
+            android:id="@+id/action_sendCodeFragment_to_registerUserFragment"
+            app:destination="@id/registerUserFragment" />
+        <action
+            android:id="@+id/action_sendCodeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerUserFragment"
+        android:name="org.lycancypher.navlayouts01.ui.registerUserModule.view.RegisterUserFragment"
+        android:label="RegisterUserFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="org.lycancypher.navlayouts01.ui.homeModule.view.HomeFragment"
+        android:label="HomeFragment" />
+</navigation>
