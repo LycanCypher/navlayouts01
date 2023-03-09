@@ -1,21 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/searchFragment"
-        android:enabled="true"
-        android:icon="@drawable/ic_search"
-        android:title="@string/description_search"
-        android:contentDescription="@string/description_search"
-        app:showAsAction="ifRoom" />
+<menu>
 
-    <item
-        android:id="@+id/caritoDeComprasFragment"
-        android:enabled="true"
-        android:icon="@drawable/ic_cart_shoping"
-        app:actionLayout="@layout/custom_action_item_layout"
-        android:title="@string/description_shoping"
-        android:contentDescription="@string/description_shoping"
-        app:showAsAction="always"/>
 </menu>

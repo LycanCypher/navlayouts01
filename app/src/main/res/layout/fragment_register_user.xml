@@ -38,10 +38,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_logo_muestra_oscuro"
+            android:contentDescription="@string/img_descript"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/tilName"/>
+            app:layout_constraintBottom_toTopOf="@id/tilName" />
 
         <TextView
             android:id="@+id/tvName"
@@ -125,6 +126,31 @@
             app:layout_constraintEnd_toEndOf="@id/margin_end"
             app:layout_constraintStart_toStartOf="@id/margin_start" />
 
+        <!--<com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilAddress"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/common_padding_min"
+            android:hint="@string/hint_address"
+            app:endIconDrawable="@drawable/ic_edit"
+            app:endIconMode="custom">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="false"
+                android:text="@{CommonUtils.INSTANCE.direcion(direccion, addresses)}"
+                android:inputType="textCapSentences"
+                android:longClickable="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                tools:ignore="KeyboardInaccessibleWidget" />
+
+        </com.google.android.material.textfield.TextInputLayout>-->
+
         <LinearLayout
             android:id="@+id/lytSexo"
             android:layout_width="0dp"
@@ -147,7 +173,9 @@
                 android:hint="@string/txt_fecha_nac"
                 android:drawablePadding="@dimen/common_margin"
                 app:drawableEndCompat="@drawable/ic_arrow_drop_down_24"
-                app:drawableTint="@color/default_grey" />
+                app:drawableTint="@color/default_grey"
+                android:autofillHints="Sexo"
+                android:inputType="textAutoComplete" />
 
         </LinearLayout>
 
@@ -209,7 +237,9 @@
                 android:hint="@string/txt_fecha_nac"
                 android:drawablePadding="@dimen/common_margin"
                 app:drawableEndCompat="@drawable/ic_baseline_calendar_today_24"
-                app:drawableTint="@color/default_grey" />
+                app:drawableTint="@color/default_grey"
+                android:autofillHints="Fecha de nacimiento"
+                android:inputType="textAutoComplete" />
 
         </LinearLayout>
 

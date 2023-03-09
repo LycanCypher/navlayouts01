@@ -5,18 +5,36 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
+import org.lycancypher.navlayouts01.BR
 import org.lycancypher.navlayouts01.R
+import org.lycancypher.navlayouts01.databinding.FragmentHomeBinding
+import org.lycancypher.navlayouts01.ui.homeModule.view.adapters.OnClickListener
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), OnClickListener {
+    private lateinit var binding: FragmentHomeBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
+        binding = DataBindingUtil.inflate(layoutInflater, R.layout.fragment_home, container, false)
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        setupViewModel()
+    }
+
+    private fun setupViewModel() {
+        binding.setVariable(BR.listener, this)
+    }
+
+    override fun onClickCode() {
+        val action = HomeFragmentDirections.actionHomeFragmentToScanCodeFragment()
+        findNavController().navigate(action)
     }
 }

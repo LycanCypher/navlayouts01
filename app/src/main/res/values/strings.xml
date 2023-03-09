@@ -20,4 +20,27 @@
     <string name="description_search">Búsqueda</string>
     <string name="zero_0">0</string>
     <string name="description_logo">logotipo</string>
+    <string name="txt_oper_choice">¡Elige la operación \n que deseas realizar!</string>
+    <string name="title_menu_home">Inicio</string>
+    <string name="title_menu_stores">Tiendas</string>
+    <string name="title_menu_movs">Movs</string>
+    <string name="title_menu_promos">Promos</string>
+    <string name="title_menu_profile">Perfil</string>
+    <string name="btn_abonar">Abonar</string>
+    <string name="txt_credit_piramid">créditos PIRAMID</string>
+    <string name="txt_efectivo_tarjeta">Paga en efectivo \n o tarjeta y abona</string>
+    <string name="txt_pay_cel">Paga tus compras \n con tu saldo de</string>
+    <string name="btn_pagar">Pagar</string>
+    <string name="title_movs_list">Lista de movimientos</string>
+    <string name="title_list_promos">Lista de Promos</string>
+    <string name="title_stores">Ubicación de tiendas</string>
+    <string name="title_profile">Opciones del perfil</string>
+    <string name="title_scan_code">Escaneo de código</string>
+    <string name="title_detail_mov">Detalle movimiento</string>
+    <string name="title_detail_promo">Detalle promo</string>
+    <string name="img_descript">Imagen</string>
+    <string name="txt_credits">créditos</string>
+    <string name="txt_creditos_cant">640</string>
+    <string name="txt_total_creds">Total de créditos</string>
+    <string name="txt_hi_username">Hola, Username</string>
 </resources>

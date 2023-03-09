@@ -33,5 +33,52 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="org.lycancypher.navlayouts01.ui.homeModule.view.HomeFragment"
-        android:label="HomeFragment" />
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_scanCodeFragment"
+            app:destination="@id/scanCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanCodeFragment"
+        android:name="org.lycancypher.navlayouts01.ui.scanCodeModule.view.ScanCodeFragment"
+        android:label="Escanea el código"
+        tools:layout="@layout/fragment_scan_code" />
+    <fragment
+        android:id="@+id/storesFragment"
+        android:name="org.lycancypher.navlayouts01.ui.storesModule.view.StoresFragment"
+        android:label="fragment_stores"
+        tools:layout="@layout/fragment_stores" />
+    <fragment
+        android:id="@+id/movsFragment"
+        android:name="org.lycancypher.navlayouts01.ui.movsModule.view.MovsFragment"
+        android:label="fragment_movs"
+        tools:layout="@layout/fragment_movs" >
+        <action
+            android:id="@+id/action_movsFragment_to_detailMovFragment"
+            app:destination="@id/detailMovFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/promosFragment"
+        android:name="org.lycancypher.navlayouts01.ui.promosModule.view.PromosFragment"
+        android:label="fragment_promos"
+        tools:layout="@layout/fragment_promos" >
+        <action
+            android:id="@+id/action_promosFragment_to_detailPromoFragment"
+            app:destination="@id/detailPromoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="org.lycancypher.navlayouts01.ui.profileModule.view.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/detailMovFragment"
+        android:name="org.lycancypher.navlayouts01.ui.detailMovModule.view.DetailMovFragment"
+        android:label="fragment_detail_mov"
+        tools:layout="@layout/fragment_detail_mov" />
+    <fragment
+        android:id="@+id/detailPromoFragment"
+        android:name="org.lycancypher.navlayouts01.ui.detailPromoModule.view.DetailPromoFragment"
+        android:label="fragment_detail_promo"
+        tools:layout="@layout/fragment_detail_promo" />
 </navigation>
