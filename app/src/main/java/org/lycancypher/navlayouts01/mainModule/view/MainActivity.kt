@@ -1,4 +1,4 @@
-package org.lycancypher.navlayouts01.activities
+package org.lycancypher.navlayouts01.mainModule.view
 
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -10,6 +10,8 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.DrawableCompat
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.DialogFragment
+
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination
 import androidx.navigation.NavOptions
@@ -18,9 +20,10 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import org.lycancypher.navlayouts01.R
 import org.lycancypher.navlayouts01.databinding.ActivityMainBinding
+import org.lycancypher.navlayouts01.mainModule.view.adapters.OnMainClickListener
 
 /*ESTA ES LA PANTALLA PRINCIPAL DE LA APP*/
-class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedListener {
+class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedListener, OnMainClickListener {
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -196,6 +199,16 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
 
             R.id.scanCodeFragment -> {
                 enableReturn(destination.label as String)
+            }
+        }
+    }
+
+    override fun showBottomDialog(dialogFragment: DialogFragment) {
+        supportFragmentManager.findFragmentByTag("Dialog").let { fragment ->
+            fragment ?: let {
+                supportFragmentManager.beginTransaction().let { transition ->
+                    dialogFragment.show(transition, "Dialog")
+                }
             }
         }
     }

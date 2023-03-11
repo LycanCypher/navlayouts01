@@ -8,6 +8,7 @@ import android.os.Handler
 import android.os.Looper
 import org.lycancypher.navlayouts01.R
 import org.lycancypher.navlayouts01.common.utils.Constants.SPLASH_TIME
+import org.lycancypher.navlayouts01.mainModule.view.MainActivity
 
 /* EN ESTA PANTALLA SE PONEN LOS PERMISOS DE LA APP */
 

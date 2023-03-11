@@ -13,7 +13,7 @@
     <string name="btn_register">Crear cuenta</string>
     <string name="txt_genero">Sexo:</string>
     <string name="hint_genero">Seleccione su sexo</string>
-    <string name="hint_fech_nac">Seleccione su fecha de nacimiento</string>
+    <string name="hint_fech_nac">Seleccione la fecha</string>
     <string name="txt_fech_nac">Fecha de nacimiento:</string>
     <string name="txt_fecha_nac">Seleccione su fecha de nacimiento</string>
     <string name="description_shoping">Carrito de compras</string>
@@ -43,4 +43,15 @@
     <string name="txt_creditos_cant">640</string>
     <string name="txt_total_creds">Total de créditos</string>
     <string name="txt_hi_username">Hola, Username</string>
+    <string name="txt_sexo">Seleccione su sexo</string>
+    <string name="txt_mujer">Mujer</string>
+    <string name="txt_hombre">Hombre</string>
+
+    <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="title_select_ur_sex">Selecciona tu sexo</string>
+
+    <string-array name="array_sexo_persona">
+        <item>Mujer</item>
+        <item>Hombre</item>
+    </string-array>
 </resources>

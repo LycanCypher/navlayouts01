@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+        <variable
+            name="listener"
+            type="org.lycancypher.navlayouts01.ui.registerUserModule.view.adapters.OnClickListener" />
 
     </data>
 
@@ -157,6 +160,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="@dimen/middle_margin"
+
             android:background="@drawable/bottom_line"
             app:layout_constraintStart_toStartOf="@id/margin_start"
             app:layout_constraintEnd_toEndOf="@id/margin_end"
@@ -170,8 +174,10 @@
                 android:textSize="18sp"
                 android:textColorHint="@color/default_grey"
                 android:backgroundTint="@color/transparent"
-                android:hint="@string/txt_fecha_nac"
+                android:hint="@string/txt_sexo"
                 android:drawablePadding="@dimen/common_margin"
+                android:onClick="@{() -> listener.onClickSex()}"
+                android:focusable="false"
                 app:drawableEndCompat="@drawable/ic_arrow_drop_down_24"
                 app:drawableTint="@color/default_grey"
                 android:autofillHints="Sexo"
@@ -234,8 +240,10 @@
                 android:textSize="18sp"
                 android:textColorHint="@color/default_grey"
                 android:backgroundTint="@color/transparent"
-                android:hint="@string/txt_fecha_nac"
+                android:hint="@string/hint_fech_nac"
                 android:drawablePadding="@dimen/common_margin"
+                android:focusable="false"
+                android:onClick="@{() -> listener.onClickFechNac()}"
                 app:drawableEndCompat="@drawable/ic_baseline_calendar_today_24"
                 app:drawableTint="@color/default_grey"
                 android:autofillHints="Fecha de nacimiento"
