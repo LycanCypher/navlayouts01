@@ -16,6 +16,7 @@
         <item name="bottomSheetDialogTheme">@style/ThemeOverlay.AppTheme.BottomSheetDialog</item>
     </style>
 
+    <!-- Estilos de la pantalla splash -->
     <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/color_primary</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
@@ -23,7 +24,9 @@
         <item name="android:navigationBarColor">@color/color_secondary</item>
         <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
     </style>
+    <!-- ***************************************************************** -->
 
+    <!-- Estilo de los botones -->
     <style name="ButtonTheme">
         <item name="backgroundTint">@color/color_secondary</item>
         <item name="android:textStyle">bold</item>
@@ -32,7 +35,9 @@
         <item name="cornerRadius">@dimen/btn_corner_radius</item>
         <item name="textAllCaps">false</item>
     </style>
+    <!-- ***************************************************************** -->
 
+    <!-- Estilo de las bottomsheet -->
     <style name="ThemeOverlay.AppTheme.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/AppModalStyle</item>
         <item name="android:navigationBarColor">@color/default_grey</item>
@@ -42,5 +47,16 @@
     <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@drawable/bg_bottom_sheet</item>
     </style>
+
+    <!-- ***************************************************************** -->
+
+    <!-- Estilos de las imageview -->
+    <style name="ImageView.Corner" parent="">
+        <item name="cornerSizeTopLeft">@dimen/common_margin</item>
+        <item name="cornerSizeBottomLeft">@dimen/common_margin</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+    <!-- ***************************************************************** -->
+
 
 </resources>

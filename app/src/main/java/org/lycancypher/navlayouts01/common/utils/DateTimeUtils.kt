@@ -23,7 +23,7 @@ object DateTimeUtils {
 
     @SuppressLint("SimpleDateFormat")
     fun parseDate(date: Long?): String? {
-        val dateParse = SimpleDateFormat("yyyy-MM-dd")
+        val dateParse = SimpleDateFormat("dd-MM-yyyy")
 
         return dateParse.format(date)
     }

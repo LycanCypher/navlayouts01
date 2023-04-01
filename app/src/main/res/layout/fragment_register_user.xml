@@ -178,7 +178,7 @@
                 android:drawablePadding="@dimen/common_margin"
                 android:onClick="@{() -> listener.onClickSex()}"
                 android:focusable="false"
-                app:drawableEndCompat="@drawable/ic_arrow_drop_down_24"
+                app:drawableEndCompat="@drawable/ic_arrow_drop_down"
                 app:drawableTint="@color/default_grey"
                 android:autofillHints="Sexo"
                 android:inputType="textAutoComplete" />

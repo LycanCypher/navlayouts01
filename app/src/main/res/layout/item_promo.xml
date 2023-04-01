@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/color_ultre_light_tone"
+    app:cardElevation="@dimen/middle_margin"
+    android:layout_marginVertical="@dimen/middle_margin"
+    app:cardCornerRadius="@dimen/common_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/min_marghin"
+        android:layout_marginVertical="@dimen/min_marghin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgIconCard"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="@dimen/min_marghin"
+            android:contentDescription="@string/img_descript"
+            android:src="@drawable/promo_apocal"
+            app:shapeAppearanceOverlay="@style/ImageView.Corner"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="@dimen/min_marghin"
+            android:layout_marginHorizontal="@dimen/middle_margin"
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitleMov"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/default_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/middle_margin"
+                    android:text="@string/txt_promo_name" />
+
+                <TextView
+                    android:id="@+id/tvDescript"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/default_grey"
+                    android:textSize="12sp"
+                    android:text="@string/txt_descript_product" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_weight="0.4">
+
+                <TextView
+                    android:id="@+id/tvAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_secondary"
+                    android:layout_marginEnd="@dimen/min_marghin"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/txt_cant" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="@string/txt_credits" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

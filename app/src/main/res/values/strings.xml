@@ -49,6 +49,34 @@
 
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string name="title_select_ur_sex">Selecciona tu sexo</string>
+    <string name="txt_user_nd_last">Username Lastname</string>
+    <string name="txt_phone">+52 55 8888 4444</string>
+    <string name="btn_personal_data">Editar datos personales</string>
+    <string name="btn_support">Ayuda y soporte</string>
+    <string name="btn_terms">Términos y condiciones</string>
+    <string name="btn_version">Version X.X.X</string>
+    <string name="btn_close">Cerrar sesión</string>
+    <string name="txt_total_comps">Total de compras</string>
+    <string name="txt_mexican_pesos">MXN</string>
+    <string name="txt_cant_pesos">$ 500.00</string>
+    <string name="txt_title_movie">Title movie</string>
+    <string name="txt_credits_in">150 créditos</string>
+    <string name="txt_amont_pay_mov">$500.00</string>
+    <string name="txt_product_name">Nombre del producto</string>
+    <string name="txt_descript_product">Breve descripción</string>
+    <string name="txt_promo_name">Nombre de la promo</string>
+    <string name="txt_cant">24</string>
+    <string name="txt_taquilla">Taquilla:</string>
+    <string name="txt_soda_fount">Fuente de sodas:</string>
+    <string name="txt_date">Fecha:</string>
+    <string name="txt_date_data">dd-MM-aaaa</string>
+    <string name="txt_abono">Abono:</string>
+    <string name="txt_pago">Pago:</string>
+    <string name="txt_detal_fount">Fuente de sodas:</string>
+    <string name="txt_vigencia">Vigencia:</string>
+    <string name="txt_muestra_codigo">Muestra este código para:</string>
+    <string name="txt_abonar">Abonar puntos PIRAMID</string>
+    <string name="txt_phone_xample">5512345678</string>
 
     <string-array name="array_sexo_persona">
         <item>Mujer</item>
