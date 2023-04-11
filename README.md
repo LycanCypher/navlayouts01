@@ -8,6 +8,4 @@ Inicialmente se procede a establecer la apariencia básica de cada pantalla y a 
 
 A continuación se muestra el funcionamiento y flujo básicos:
 
-![Alt Text](https://drive.google.com/file/d/1xslXkz27Fcw_XTzEiKOS-2v1zLeLQIjd/view?usp=sharing)
-
-<img src="(https://drive.google.com/file/d/1xslXkz27Fcw_XTzEiKOS-2v1zLeLQIjd/view?usp=sharing" width="436" height="970" />
+<img src="app01b.gif" width="218" height="485" />
